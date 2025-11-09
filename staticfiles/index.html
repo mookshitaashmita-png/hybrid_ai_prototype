@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hybrid AI Prototype</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  <script src="{% static 'script.js' %}" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hybrid AI Prototype</h1>
+    <label for="userInput">Message to AI:</label>
+    <input id="userInput" placeholder="Type something..." />
+    <div class="row">
+      <button id="sendBtn">Send</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+    <h3>Response</h3>
+    <pre id="output" class="output">(no response yet)</pre>
+    <p class="note">Backend URL: <span id="backendUrl">SET_NGROK_URL</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
